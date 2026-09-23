@@ -38,3 +38,10 @@ class Paciente:
     @prevision.setter
     def prevision(self, prevision: str) -> None:
         self._prevision = prevision 
+
+    def __str__(self)-> str:
+        return f"informacion del paciente:\n rut: {self.rut}\nNombre: {self.nombre}\nEdad: {self.edad}\nPrevision: {self.prevision}"
+
+    def __repr__(self)-> str:
+        return f"paciente(rut='{self.rut}', nombre ='{self.nombre}', edad='{self.edad}', prevision='{self.prevision}',)"
+    
